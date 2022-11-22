@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000"></canvas>
+</head>
+<body>
+    <script>
+        let Rectangle = function(width, height) { 
+            this.width = width;
+            this.height = height;
+
+            this.getWidth = function() {
+                return this.width; 
+            }
+            this.getHeight = function() {
+                return this.height;
+            }
+            
+            this.setWidth = function(width) {
+                this.width = width;
+            } 
+            this.setHeight = function(height) {
+                this.height = height;
+            } 
+            this.getArea = function () {
+                return this.width * this.height;
+            }    
+            this.getPrimeter = function() {
+                return (this.height + this. width) * 2;
+            } 
+            }
+            
+            let rectangle = new Rectangle(150,50);
+            let width = rectangle.getWidth();
+            let height = rectangle.getHeight();
+            rectangle.getHeight(150);
+            rectangle.setWidth(50);
+            document.write(rectangle.getWidth());
+    let canvas = document.getElementById("myCanvas");
+    let ctx= canvas.getContext("2d");
+    ctx.fillStyle = "green";
+    ctx.fillRect(20,20,150,50);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
